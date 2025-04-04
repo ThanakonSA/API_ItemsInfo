@@ -1,8 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from pymongo import MongoClient
 from fastapi.middleware.cors import CORSMiddleware
-
 import os
+from dotenv import load_dotenv
+load_dotenv()
 app = FastAPI()
 
 app.add_middleware(
